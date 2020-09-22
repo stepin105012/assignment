@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <script>
+        function action()
+        {
+            var desc=document.getElementById("select");
+            var info = desc.options[desc.selectedIndex].value;
+            document.getElementById("demo").innerHTML = info;
+        }
+    </script> 
+</head>
+<body>
+    <center>
+        <h1></h1> 
+        <select id="select" onchange="action()">
+            <option>--Products--</option>
+            <option value="Audi, BMW, Mercedes">Cars</option>
+            <option value="LG, Samsung, Sony">Television</option>
+            <option value="Apple, Dell, HP">Laptop</option>
+            <option value="Apple, Asus, Samsung">Phone</option>
+    </select>
+    <div id="demo" style="background-color: aqua; margin-top: 20px; width: 200px;">
+
+    </div>
+    <p id="demo"></p>
+    </center>
+</body>
+</html>

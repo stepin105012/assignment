@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    Enter your name:<textarea  rows="10"col="10"id="fname" onkeyup="myFunction()"></textarea>
+    <p> My name is :<div id="demo"></div></p>
+    <script>
+       function myFunction()
+       {
+           var name=document.getElementById("fname").value;
+           document.getElementById("demo").innerHTML=name;
+       }
+    </script>
+</body>
+</html>
